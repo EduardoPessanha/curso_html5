@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+    p{
+        text-align: justify; 
+        text-indent: 50px;  
+    }
+
+    header#cabecalho {
+
+    }
+    
+    header#cabecalho img#icone {
+        position: absolute;
+        left: 750px;
+        top: 40px;
+    }
+
+    body {
+        /* Cores: */
+        /* background-image: url("fundo_aco_escovado.jpg"); */
+        background-color: #dddddd;
+        /* background-color: #2389c3; cor de fundo */
+        color:hsla(0, 0%, 0%, 1);    /* cor da letra */
+
+        /* Cores RGB em hexadecimal é formado por 6 digitos: 
+        Começa com "#"
+        Dois primeiros digitos: quantidade de VERMELHO 
+        Dois digitos centrais: quantidade de VERDE
+        Dois últimos digitos: quantidade de AZUL
+        */
+
+    /* Formatação de imagens com lgendas: */
+    }
+
+    div#interface {
+        width: 900px;
+        background-color: white;
+        margin: -20px auto 0px auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+
+
+    figure.foto_legenda {
+        position: relative;
+        border: 8px solid white;
+        box-shadow: 1px 1px 4px black;
+    }
+
+    figure.foto_legenda img {
+        width: 100%;
+        height: 100%;
+    }
+
+    figure.foto_legenda figcaption {
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: opacity 1s;
+    }
+
+    figure.foto_legenda:hover figcaption {
+        opacity: 1;
+    }
+
+    /*  Formatação do menu */
+
+    nav {
+        display: block;
+    }
+
+    nav#menu ul {
+        list-style: none;
+        text-transform: uppercase;
+        position: absolute;
+        top: -10px;
+        left: 300px;     
+    }
+
+    nav#menu li {
+        display: inline-block;
+        background-color: rgb(221, 221, 221);
+        padding: 10px;   /* padding => determina o espaço dentro do objeto */
+        margin: 2px;   /* margin => determina o espaço fora do objeto */
+        transition: background-color 1s;
+    }
+
+    nav#menu li:hover {
+        background-color: #606060;
+    }
+
+    nav#menu h1 {
+        display: none;
+    }
+
+    nav#menu a {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    nav#menu a:hover {
+        color: white;
+        text-decoration: underline;
+    }
