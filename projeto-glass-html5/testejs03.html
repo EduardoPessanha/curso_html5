@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Teste JavaScript</title>
+    <script>
+        var quebrada = false;
+        function lampada(modo) {
+            // if (modo == 'acende') {
+            //     var arquivo ="_imagens/lampada-acesa.jpg";
+            // }
+            // if (modo == 'apaga') {
+            //         var arquivo = "_imagens/lampada-apagada.jpg";
+            // }
+            // if (modo =='quebra') {
+            // var arquivo = "_imagens/lampada-quebrada.jpg";
+            // // quebrada=true;
+            // }
+            // if (!quebrada) {
+            //     document.getElementById("luz").src = arquivo;
+            //     if (modo == 'quebra'){
+            //         quebrada = true;
+            //     }
+            // }  **************     SIMPLIFICANDO O CÓDIGO ACIMA:     **************
+            if (!quebrada) {
+                document.getElementById("luz").src = "_imagens/" + modo + ".jpg";
+                if (modo == 'lampada-quebrada') {
+                    quebrada =true;
+                }
+            }
+        }
+     </script>
+
+</head>
+<body>
+
+    <h1>Acenda a Lâmpada</h1>
+    <!-- <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="lampada('acende')" onmouseout="lampada('apaga')" onclick="lampada('quebra')"> -->
+    <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="lampada('lampada-acesa')" onmouseout="lampada('lampada-apagada')" onclick="lampada('lampada-quebrada')">
+    
+</body>
+</html>
